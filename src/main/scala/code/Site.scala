@@ -14,6 +14,7 @@ object Site extends bigtop.routes.LiftSite with LiftSiteExtras {
   val repeat   = ("repeat"   :/: StringArg :/: IntArg :/: "times" :/: end) >> (doRepeat _)
   val append   = ("append"                                        :/: any) >> (doAppend _)
   val static   = ("static"                                        :/: any) >> (doStatic _)
+  
   // Implementation:
   
   def doIndex() =
