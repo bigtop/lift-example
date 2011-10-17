@@ -3,7 +3,7 @@ package code
 import net.liftweb.http._
 import bigtop.routes._
 
-object Site extends bigtop.routes.LiftSite with LiftSiteExtras {
+object Site extends LiftSite with LiftSiteExtras {
 
   // Routing table:
 
